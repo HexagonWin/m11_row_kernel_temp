@@ -24,6 +24,8 @@ export CLANG_TRIPLE=aarch64-linux-gnu-
 export CC=${CC}
 
 #make -j $THREAD m11_row_defconfig
-make -j $THREAD O=./output/ ARCH=arm64 CROSS_COMPILE=aarch64-linux-android- CLANG_TRIPLE=aarch64-linux-gnu- CC=${CC} m11_defconfig
+make p11_defconfig
 
-make -j $THREAD O=./output/ ARCH=arm64 CROSS_COMPILE=aarch64-linux-android- CLANG_TRIPLE=aarch64-linux-gnu- CC=${CC}
+make menuconfig
+
+#make -j $THREAD O=./output/ ARCH=arm64 CROSS_COMPILE=aarch64-linux-android- CLANG_TRIPLE=aarch64-linux-gnu- CC=${CC}
